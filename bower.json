@@ -1,0 +1,31 @@
+{
+  "name": "angular-react-examples",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Taehyun Kim <kgyoo8232@gmail.com> (https://github.com/kimxogus)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "react",
+    "ngReact",
+    "requirejs",
+    "gulp",
+    "webpack"
+  ],
+  "homepage": "https://github.com/kimxogus/angular-react-examples",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "require-css": "^0.1.8",
+    "ngReact": "^0.3.0",
+    "react": "^15.0.2"
+  }
+}

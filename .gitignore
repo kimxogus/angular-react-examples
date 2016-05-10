@@ -1,0 +1,5 @@
+.idea
+npm-debug.log*
+node_modules
+requirejs/dist
+webpack/dist
