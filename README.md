@@ -4,7 +4,7 @@
 - I hope that this examples are useful for developers who want to use both angular 1 and react and don't know how to combine them.
 - If your are not familiar with React, refer to Related Tutorial below
 
-## Example Following Steps
+## Examples
 ###- RequireJS
 This example uses [RequireJS](https://github.com/requirejs/requirejs) to load dependencies and each components. However, requirejs cannot load css files by itself, so I added [require-css](https://github.com/guybedford/require-css) to load css files using requirejs. You can see how css files are loaded in require-css in ```requirejs/src/js/main.js```. I also commented brief explanation of requirejs. For more information about requirejs or require-css, please refer to their own documents.
  - ```git clone https://github.com/kimxogus/angular-react-examples.git```
