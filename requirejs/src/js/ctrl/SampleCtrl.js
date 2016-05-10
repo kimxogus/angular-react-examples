@@ -4,7 +4,7 @@
 
 'use strict';
 define(['app', '../component/Header', '../component/Form'], function(app) {
-    app.controller("SampleCtrl", ["$scope", function($scope) {
+    app.controller("sampleCtrl", ["$scope", function($scope) {
         $scope.header = {name: "World"};
         $scope.form = {
             name: $scope.header.name,

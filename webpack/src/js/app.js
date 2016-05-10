@@ -1,5 +1,7 @@
 /**
  * Created by kimxogus on 2016-05-10.
+ *
+ * TODO: add route & ui-route examples
  */
 
 // Load CSS
@@ -20,7 +22,7 @@ angular.module('app', ['react'])
     .value('Form', require('./component/Form'))
 
     // Register Controllers
-    .controller('SampleCtrl', require('./ctrl/SampleCtrl'));
+    .controller('sampleCtrl', require('./ctrl/SampleCtrl'));
 
 
 // bind app to document when ready
