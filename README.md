@@ -1,5 +1,6 @@
 # angular-react-examples
 - Simple examples of [Angular](https://github.com/angular/angular.js) and [React](https://github.com/facebook/react) using [ngReact](https://github.com/ngReact/ngReact).
+- React makes us to build web ui efficiently because it focuses on view, but it has limitation in model and controller in mvc. There are libraries for them like flux and redux, they don't still satisfy me. On the other hand, Angular has various useful features for controller and model. However, angular also has various its own directives and attributes like ng-repeat, ng-model and so on... these makes html code too complicated. Therefore, combining React and Angular can be effective solution.
 - Not only angular, react and ngReact, this example contains other utilities(for now, requirejs webpack and gulp) to easily build your SPA(Single Page Application). Using these utilities, you don't have to insert ```<script></script>``` tags for every single js and stylesheets. Only one script tag will build your SPA.
 - I hope that this examples are useful for developers who want to use both angular 1 and react and don't know how to combine them.
 - If your are not familiar with React, refer to Related Tutorial below
