@@ -4,6 +4,12 @@
 
 function SampleController($scope) {
     $scope.header = {name: "World"};
+    $scope.form = {
+        name: $scope.header.name,
+        onClick: function(name) {
+            $scope.header.name = name;
+        }
+    };
 }
 
 SampleController.$inject = ['$scope'];

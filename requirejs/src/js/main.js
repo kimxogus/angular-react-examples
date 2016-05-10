@@ -12,10 +12,11 @@ requirejs.config({
         }
     },
     paths:{             // define some paths. If you call require('react'), 'js/../lib/react/react.min.js' will be loaded
-        'react'                 : '../lib/react/react.min',
-        'react-dom'             : '../lib/react/react-dom.min',
-        'angular'               : '../lib/angular/angular.min',
-        'ngReact'               : '../lib/ngReact/ngReact.min'
+        'react'             : '../lib/react/react.min',
+        'react-dom'         : '../lib/react/react-dom.min',
+        'angular'           : '../lib/angular/angular.min',
+        'ngReact'           : '../lib/ngReact/ngReact.min',
+        'bootstrap'         : '../lib/bootstrap/dist/css/bootstrap.min'
     },
     shim:{              // define dependencies or exort variables.
         'react-dom'         : {deps: ['react']},    // react will be loaded before react-dom
@@ -25,7 +26,8 @@ requirejs.config({
 });
 
 require([
-    'angular', 'app', 'ctrl/SampleCtrl', 'css!css/style'    // define prerequisite modules have to be loaded before following script
-], function(angular){                                      // exported angular variable is called
-    angular.bootstrap(document, ['app']);                   // script after loading modules
+    'angular', 'app', 'ctrl/SampleCtrl',
+    'css!bootstrap', 'css!css/style'            // define prerequisite modules have to be loaded before following script
+], function(angular){                          // exported angular variable is called
+    angular.bootstrap(document, ['app']);       // script after loading modules
 });

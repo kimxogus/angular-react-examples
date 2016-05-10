@@ -6,3 +6,8 @@ body {
     font-size: 30px;
     text-align: center;
 }
+
+.input-box {
+    display: inline-block;
+    width: calc(100% - 75px);
+}

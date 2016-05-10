@@ -10,7 +10,7 @@ var
 const Header = React.createClass({
     render() {
         return (
-            <div>
+            <div className="row">
                 <Title name={this.props.name}/>
             </div>
         );

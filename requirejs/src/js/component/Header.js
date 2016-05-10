@@ -8,7 +8,7 @@ define(['react', 'app', 'component/Title'], function (React, app, Title) {
     const Header = React.createClass({
         render() {
             return (
-                <div>
+                <div className="row">
                     <Title name={this.props.name}/>
                 </div>
             );

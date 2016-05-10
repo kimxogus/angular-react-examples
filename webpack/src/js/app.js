@@ -3,6 +3,7 @@
  */
 
 // Load CSS
+require('../../../bower_components/bootstrap/dist/css/bootstrap.min.css');
 require('../css/style.css');
 
 // Load libraries
@@ -16,6 +17,7 @@ angular.module('app', ['react'])
 
     // Register React Components
     .value('Header', require('./component/Header'))
+    .value('Form', require('./component/Form'))
 
     // Register Controllers
     .controller('SampleCtrl', require('./ctrl/SampleCtrl'));
