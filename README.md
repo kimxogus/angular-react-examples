@@ -8,18 +8,18 @@
 ###- RequireJS
 This example uses [RequireJS](https://github.com/requirejs/requirejs) to load dependencies and each components. However, requirejs cannot load css files by itself, so I added [require-css](https://github.com/guybedford/require-css) to load css files using requirejs. You can see how css files are loaded in require-css in ```requirejs/src/js/main.js```. I also commented brief explanation of requirejs. For more information about requirejs or require-css, please refer to their own documents.
  - ```git clone https://github.com/kimxogus/angular-react-examples.git```
- - ```cd requirejs```
  - ```npm install -g gulp```
  - ```npm install```
+ - ```cd requirejs```
  - ```gulp build```
  - open ```path/to/your/project/requirejs/dist/index.html``` in your web brower
  
 ###- Webpack
 This example uses [Webpack](https://github.com/webpack/webpack) to integrate all the libraries and components into single js file. Babel, babel presets for es2015 & react and css & style loaders are also used in this example. Using webpack, you can build web SPA like nodejs application. For now, this example is not written in es6. I'll upload another example written in es6 as soon as I make. (or you can make a pull request :) )
  - ```git clone https://github.com/kimxogus/angular-react-examples.git```
- - ```cd webpack```
  - ```npm install -g gulp webpack```
  - ```npm install```
+ - ```cd webpack```
  - ```gulp build```
  - open ```path/to/your/project/webpack/dist/index.html``` in your web browser
 
