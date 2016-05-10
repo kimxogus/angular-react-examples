@@ -36,6 +36,8 @@ const
     CLEAN           = "clean",
     BUILD           = "build",
     WATCH           = "watch",
+    WATCH_APP       = "watch-app",
+    WATCH_HTML      = "watch-html",
     WEBPACK         = "webpack",
     MOVE_HTML       = "move-html";
 
@@ -83,8 +85,14 @@ gulp.task(CLEAN, function(cb) {
 /**
  * Watch Tasks
  */
-gulp.task(WATCH, function() {
-    gulp.watch(APP_SRC, WEBPACK).on('change', watcherHandler);
+gulp.task(WATCH, [WATCH_APP, WATCH_HTML]);
+
+gulp.task(WATCH_APP, function() {
+    gulp.watch(APP_SRC, [WEBPACK]).on('change', watcherHandler);
+});
+
+gulp.task(WATCH_HTML, function() {
+    gulp.watch(HTML_SRC, [MOVE_HTML]).on('change', watcherHandler);
 });
 
 function watcherHandler(e) {

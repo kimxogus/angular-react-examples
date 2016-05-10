@@ -48,6 +48,7 @@ const
     WATCH            = "watch",
     WATCH_JS         = "watch-js",
     WATCH_CSS        = "watch-css",
+    WATCH_HTML       = "watch-html",
 
     MINIFY_JS        = "minify-js",
     MINIFY_CSS       = "minify-css",
@@ -100,8 +101,7 @@ gulp.task(CLEAN, function(cb) {
 /**
  * Watch Tasks
  */
-gulp.task(WATCH, [WATCH_JS, WATCH_CSS]);
-
+gulp.task(WATCH, [WATCH_JS, WATCH_CSS, WATCH_HTML]);
 
 function watcherHandler(e) {
     console.log("File " + e.path.replace(__dirname, "") + " was " + e.type + ", running tasks...");
@@ -113,6 +113,10 @@ gulp.task(WATCH_JS, function() {
 
 gulp.task(WATCH_CSS, function() {
     gulp.watch(CSS_SRC, [MINIFY_CSS]).on('change', watcherHandler);
+});
+
+gulp.task(WATCH_HTML, function() {
+    gulp.watch(HTML_SRC, [MOVE_HTML]).on('change', watcherHandler);
 });
 
 
