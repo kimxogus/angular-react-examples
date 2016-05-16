@@ -3,6 +3,7 @@
  */
 var
     React = require('react'),
+    app   = global.app,
 
     Title = require('./Title');
 
@@ -16,5 +17,7 @@ const Header = React.createClass({
         );
     }
 });
+
+app.value('Header', Header);
 
 module.exports = Header;

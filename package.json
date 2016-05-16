@@ -52,6 +52,8 @@
   },
   "dependencies": {
     "angular": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "bootstrap": "^3.3.6",
     "ngreact": "^0.3.0",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"

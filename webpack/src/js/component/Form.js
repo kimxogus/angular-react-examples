@@ -1,7 +1,9 @@
 /**
  * Created by Taehyun on 2016-05-10.
  */
-var React = require('react');
+var
+    React = require('react'),
+    app   = global.app;
 
 const Form = React.createClass({
     getInitialState() {
@@ -29,5 +31,7 @@ const Form = React.createClass({
         );
     }
 });
+
+app.value('Form', Form);
 
 module.exports = Form;
