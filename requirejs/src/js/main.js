@@ -15,18 +15,20 @@ requirejs.config({
         'react'             : '../lib/react/react.min',
         'react-dom'         : '../lib/react/react-dom.min',
         'angular'           : '../lib/angular/angular.min',
+        'angular-route'     : '../lib/angular-route/angular-route.min',
         'ngReact'           : '../lib/ngReact/ngReact.min',
         'bootstrap'         : '../lib/bootstrap/dist/css/bootstrap.min'
     },
     shim:{              // define dependencies or exort variables.
         'react-dom'         : {deps: ['react']},    // react will be loaded before react-dom
         'angular'       	: {exports: 'angular'}, // value 'angular' from angularjs will be exported and can be called by requirejs
+        'angular-route'     : {deps: ['angular']},
         'ngReact'           : {deps: ['angular', 'react', 'react-dom']}
     }
 });
 
 require([
-    'angular', 'app', 'ctrl/SampleCtrl',
+    'angular', 'app', 'ctrl/SampleCtrl', 'routes',
     'css!bootstrap', 'css!css/style'            // define prerequisite modules have to be loaded before following script
 ], function(angular){                          // exported angular variable is called
     angular.bootstrap(document, ['app']);       // script after loading modules

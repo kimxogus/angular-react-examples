@@ -5,8 +5,8 @@
  */
 
 'use strict';
-define(['ngReact'], function(){
-    var app = angular.module('app', ['react']);
+define(['ngReact', 'angular-route'], function(){
+    var app = angular.module('app', ['react', 'ngRoute']);
 
     return app;
 });

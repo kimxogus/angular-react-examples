@@ -9,8 +9,9 @@
 ###- RequireJS
 This example uses [RequireJS](https://github.com/requirejs/requirejs) to load dependencies and each components. However, requirejs cannot load css files by itself, so I added [require-css](https://github.com/guybedford/require-css) to load css files using requirejs. You can see how css files are loaded in require-css in ```requirejs/src/js/main.js```. I also commented brief explanation of requirejs. For more information about requirejs or require-css, please refer to their own documents.
  - ```git clone https://github.com/kimxogus/angular-react-examples.git```
- - ```npm install -g gulp```
+ - ```npm install -g gulp bower```
  - ```npm install```
+ - ```bower install```
  - ```cd requirejs```
  - ```gulp build```
  - open ```path/to/your/project/requirejs/dist/index.html``` in your web brower
